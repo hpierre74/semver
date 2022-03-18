@@ -2,6 +2,54 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+# [2.14.0](https://github.com/hpierre74/semver/compare/semver-2.13.2...semver-2.14.0) (2022-03-18)
+
+
+### Bug Fixes
+
+* **semver:** 🐞 add `--tagPrefix` + deprecate `--versionTagPrefix` ([6c22e4c](https://github.com/hpierre74/semver/commit/6c22e4cdaf95a212b1ace12b93dd18cbb991340f))
+* **semver:** 🐞 add log when push succeed ([bdf7abf](https://github.com/hpierre74/semver/commit/bdf7abf8e231f9d3c83a50877cc1180abc4fb7ae))
+* **semver:** 🐞 bump `@commitlint/*` deps ([4cd0d70](https://github.com/hpierre74/semver/commit/4cd0d7008b2acb2b9c8beb56bb9795f7919ff6f0))
+* **semver:** 🐞 bump `@commitlint/*` deps ([5f0a4f5](https://github.com/hpierre74/semver/commit/5f0a4f547d7800b6ed19d4956e3beb646bd3dae1))
+* **semver:** 🐞 calculate notes from root changelog ([2f26cad](https://github.com/hpierre74/semver/commit/2f26cade3bdd677c85db0336e2dc5b2f320e03d8))
+* **semver:** 🐞 correctly forward `--no-verify` ([50ec0ed](https://github.com/hpierre74/semver/commit/50ec0ed5b153213a623102285865a1694db3f258))
+* **semver:** 🐞 correctly grab deps git refs ([94d3fe3](https://github.com/hpierre74/semver/commit/94d3fe337e4a2cda53cbb754fb3699bf140c2e38))
+* **semver:** 🐞 correctly run `gh` command ([63346e7](https://github.com/hpierre74/semver/commit/63346e7c3e05527b8631107c6ab29bcf983550e9))
+* **semver:** 🐞 deprecate `--syncVersions` ([65e5910](https://github.com/hpierre74/semver/commit/65e5910222a2256a28dfae8b862f822804919431))
+* **semver:** 🐞 fallback to default commit message format ([5bdc696](https://github.com/hpierre74/semver/commit/5bdc6964f8f41cd70ce6ca1a90d37553c13f01a8))
+* **semver:** 🐞 fatal pathspec `undefined` ([02634b9](https://github.com/hpierre74/semver/commit/02634b9f055f6b81aa0aef14a8a64f9f031f82ad)), closes [#449](https://github.com/hpierre74/semver/issues/449)
+* **semver:** 🐞 fix `gh` CLI error handling ([3d87938](https://github.com/hpierre74/semver/commit/3d87938adb7b546cdc341e1fc112187851726255))
+* **semver:** 🐞 forward `--skipProjectChangelog` in independent mode ([85909de](https://github.com/hpierre74/semver/commit/85909dea90a2cf56e8cc4f2cf9e3f4f459cb8853))
+* **semver:** 🐞 log `gh` CLI errors ([871a039](https://github.com/hpierre74/semver/commit/871a03982f7c70c5b15cb09b038a7573b71be572))
+* **semver:** 🐞 rename `--branch` to `--target` ([ca1c539](https://github.com/hpierre74/semver/commit/ca1c539e888d3bbb334038d888ba905dfc5e282c))
+* **semver:** 🐞 support `--trackDeps` for Nx < 13 ([bd7ce83](https://github.com/hpierre74/semver/commit/bd7ce8358d4d12078b09e45aa910fc4c66663c19)), closes [#443](https://github.com/hpierre74/semver/issues/443)
+* **semver:** 🐞 support Nx 13.9.2 ([a757b30](https://github.com/hpierre74/semver/commit/a757b3073ac29cc67b9b69f89ec78e07028a4fc8)), closes [#467](https://github.com/hpierre74/semver/issues/467)
+* **semver:** 🐞 use `--skipProjectChangelog` with independent mode ([293af06](https://github.com/hpierre74/semver/commit/293af06958d806bcb5f467f7e499ef237599507e))
+* **semver:** 🐞 use `execFile` for command execution ([b51903b](https://github.com/hpierre74/semver/commit/b51903b246ed1f4876448abd1a0d3ebe64843f2c)), closes [#350](https://github.com/hpierre74/semver/issues/350)
+* **semver:** 🐞 use type list for `x-prompt` preset ([d8b1da2](https://github.com/hpierre74/semver/commit/d8b1da24ea55d3818bcdbfa5ae8ddf9ab040045c))
+* **semver:** handle post target executor errors ([c4282a0](https://github.com/hpierre74/semver/commit/c4282a07e5e6a68edf53e9a19a8c8fc69d082ce5))
+* **semver:** sync versioning when `skipProjectChangelog` ([#446](https://github.com/hpierre74/semver/issues/446)) ([b0cdc58](https://github.com/hpierre74/semver/commit/b0cdc58c2fa9aae4f68afb1fcc965928fa78572d)), closes [#408](https://github.com/hpierre74/semver/issues/408)
+* **semver:** typo on `notesFile` schema option ([dff85db](https://github.com/hpierre74/semver/commit/dff85dba7690d0182f3ff481a076ef20af09e2e0))
+
+
+### Features
+
+* **semver:** ✅ add `--commitMessageFormat` option ([b8e9674](https://github.com/hpierre74/semver/commit/b8e9674c257594f31e744cae6cf6a35af40f1a3b))
+* **semver:** ✅ add `--generate-notes` option ([6824a12](https://github.com/hpierre74/semver/commit/6824a12219f78d45a81a84a178f032916f874b71))
+* **semver:** ✅ add support for `--preset` option ([1b9635a](https://github.com/hpierre74/semver/commit/1b9635a50a89662c0fd557f4ff6d819529c4d9b8)), closes [#457](https://github.com/hpierre74/semver/issues/457)
+* **semver:** ✅ configure default `--commitMessageFormat` ([6388bc7](https://github.com/hpierre74/semver/commit/6388bc7e793a9b878a5623c7c2220fc028691f47))
+* **semver:** ✅ provide relative notes to post targets ([3f523f1](https://github.com/hpierre74/semver/commit/3f523f1a45f8ebe0d8428b1feb28501d9628dd8d))
+* **semver:** add gitlab releases executor ([0e41f7d](https://github.com/hpierre74/semver/commit/0e41f7da44780c79a65100da23e9411ab6c9e826))
+* **semver:** filter out prerelease tags if trying to release ([c508323](https://github.com/hpierre74/semver/commit/c50832318df61769fda76df2b29cedbc7a150791))
+* **semver:** log dependency updates with `--trackDeps` ([#445](https://github.com/hpierre74/semver/issues/445)) ([44a2e54](https://github.com/hpierre74/semver/commit/44a2e545ee7fbb8549301dc830fd5df4f09bfb5c))
+
+
+### Reverts
+
+* ⚙️ debug github executor ([925760d](https://github.com/hpierre74/semver/commit/925760d37ab270430177682507449c38582a78c0))
+
+
+
 ## [2.21.2](https://github.com/jscutlery/semver/compare/semver-2.21.1...semver-2.21.2) (2022-03-18)
 
 
